@@ -1,0 +1,2320 @@
+Model {
+  Name			  "sfcar_vr"
+  Version		  4.00
+  SampleTimeColors	  on
+  LibraryLinkDisplay	  "none"
+  WideLines		  on
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  PreLoadFcn		  "load sf_cardat"
+  Created		  "Tue Jun 02 16:12:01 1998"
+  Creator		  "nikita"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "nsmith"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Oct 19 14:04:27 2001"
+  ModelVersionFormat	  "1.%<AutoIncrement:78>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "30"
+  SolverMode		  "SingleTasking"
+  Solver		  "ode5"
+  RelTol		  "1e-3"
+  AbsTol		  "1e-6"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  off
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  off
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "none"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWOptions		  " -aLogVarNameModifier=\"rt_\" -aExtMode=0 -aRollThr"
+"eshold=5 -aShowEliminatedStatements=1 -aRTWVerbose=1 -aInlineInvariantSignals"
+"=1 -aLocalBlockOutputs=1 -aInlineParameters=0"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "sfcar_vr"
+    Location		    [251, 323, 1037, 824]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "portrait"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "108"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Gain
+      Name		      "Conversion to m/s"
+      Position		      [125, 381, 170, 419]
+      BackgroundColor	      "red"
+      Gain		      "-0.05"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Engine"
+      Ports		      [2, 1]
+      Position		      [145, 32, 205, 88]
+      BackgroundColor	      "lightBlue"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Engine"
+	Location		[3, 415, 453, 549]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Ti"
+	  Position		  [35, 19, 60, 31]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "throttle"
+	  Position		  [35, 48, 60, 62]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [325, 45, 355, 75]
+	  ShowName		  off
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "1000"
+	  LimitOutput		  on
+	  UpperSaturationLimit	  "6000"
+	  LowerSaturationLimit	  "600"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [195, 42, 225, 73]
+	  ShowName		  off
+	  IconShape		  "rectangular"
+	  Inputs		  "-+"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "engine\ntorque"
+	  Ports			  [2, 1]
+	  Position		  [115, 47, 145, 78]
+	  SourceBlock		  "simulink3/Functions\n& Tables/Look-Up\nTabl"
+"e (2-D)"
+	  SourceType		  "Lookup Table (2-D)"
+	  x			  "thvec"
+	  y			  "nevec"
+	  t			  "emap"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "engine + impeller\ninertia"
+	  Position		  [260, 39, 300, 81]
+	  Gain			  "1/Iei"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Ne"
+	  Position		  [395, 54, 420, 66]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "Ti"
+	  SrcPort		  1
+	  Points		  [95, 0; 0, 25]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "throttle"
+	  SrcPort		  1
+	  DstBlock		  "engine\ntorque"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [0, 60; -300, 0; 0, -50]
+	    DstBlock		    "engine\ntorque"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Ne"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "engine + impeller\ninertia"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "engine + impeller\ninertia"
+	  SrcPort		  1
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "engine\ntorque"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Form vehicle \ntranslation field"
+      Ports		      [1, 1]
+      Position		      [355, 370, 450, 430]
+      BackgroundColor	      "magenta"
+      SourceBlock	      "vrlib/VR Signal Expander"
+      SourceType	      "VR Signal Expander"
+      outwidth		      "3"
+      outidx		      "[1]"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator"
+      Ports		      [1, 1]
+      Position		      [215, 379, 255, 421]
+      BackgroundColor	      "red"
+      ShowName		      off
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      Port {
+	PortNumber		1
+	Name			"Vehicle position Z"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [2, 1]
+      Position		      [645, 288, 650, 357]
+      BackgroundColor	      "black"
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Threshold Calculation"
+      Ports		      [2, 2, 0, 1]
+      Position		      [145, 233, 270, 282]
+      Orientation	      "left"
+      BackgroundColor	      "lightBlue"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      on
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Threshold Calculation"
+	Location		[148, 234, 563, 417]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "gear"
+	  Position		  [20, 118, 50, 132]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "throttle"
+	  Position		  [20, 53, 50, 67]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "run"
+	  Ports			  []
+	  Position		  [160, 15, 180, 35]
+	  TriggerType		  "function-call"
+	  ShowOutputPort	  off
+	  OutputDataType	  "auto"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "interp_down"
+	  Ports			  [2, 1]
+	  Position		  [240, 117, 270, 153]
+	  SourceBlock		  "simulink3/Functions\n& Tables/Look-Up\nTabl"
+"e (2-D)"
+	  SourceType		  "Lookup Table (2-D)"
+	  x			  "downth"
+	  y			  "[1:4]"
+	  t			  "downtab"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "interp_up"
+	  Ports			  [2, 1]
+	  Position		  [240, 52, 270, 88]
+	  SourceBlock		  "simulink3/Functions\n& Tables/Look-Up\nTabl"
+"e (2-D)"
+	  SourceType		  "Lookup Table (2-D)"
+	  x			  "upth"
+	  y			  "[1:4]"
+	  t			  "uptab"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "down_th"
+	  Position		  [340, 128, 370, 142]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "up_th"
+	  Position		  [335, 63, 365, 77]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "interp_up"
+	  SrcPort		  1
+	  DstBlock		  "up_th"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "interp_down"
+	  SrcPort		  1
+	  DstBlock		  "down_th"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "throttle"
+	  SrcPort		  1
+	  Points		  [110, 0]
+	  Branch {
+	    DstBlock		    "interp_up"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "interp_down"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "gear"
+	  SrcPort		  1
+	  Points		  [85, 0]
+	  Branch {
+	    Points		    [0, -45]
+	    DstBlock		    "interp_up"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 20]
+	    DstBlock		    "interp_down"
+	    DstPort		    2
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "VR Sink"
+      Ports		      [1]
+      Position		      [495, 365, 605, 435]
+      BackgroundColor	      "magenta"
+      SourceBlock	      "vrlib/VR Sink"
+      SourceType	      "Virtual Reality Sink"
+      SampleTime	      "0.1"
+      ViewEnable	      on
+      RemoteChange	      off
+      RemoteView	      off
+      FieldsWritten	      "Octavia.translation"
+      WorldFileName	      "blossom_skoda.wrl"
+      WorldDescription	      "Skoda Octavia on UCLA Pearlblossom Highway"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Vehicle"
+      Ports		      [2, 2]
+      Position		      [495, 71, 595, 144]
+      BackgroundColor	      "lightBlue"
+      FontSize		      8
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "vehicle model"
+      MaskDescription	      "vehicle dynamics: torque input from trans., out"
+"puts are input speed (transmission output) and vehicle speed "
+      MaskPromptString	      " final drive ratio | drag friction at wheels | "
+"aerodynamic drag | wheel radius | vehicle inertia | initial transmission outp"
+"ut speed"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on,on,on"
+      MaskCallbackString      "|||||"
+      MaskEnableString	      "on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on"
+      MaskInitialization      "Rfd = @1; rload0 = @2; rload2 = @3; Rw = @4; Iv"
+" = @5; N20 = @6;"
+      MaskDisplay	      "plot([cos(pi*[0:5:360]/180) + 6], [sin(pi*[0:5:"
+"360]/180) + 1.5],[cos(pi*[0:5:360]/180) + 1], [sin(pi*[0:5:360]/180) + 4], [1"
+"0 7.5 6.75], [3.5 1 1.5], [10 9.75 7.5 6.25 3 1.5 4 5 7.5], [3.5 4.75 5.5 7 8"
+" 7 6 4 5.5], [6.5 4], [7 6], [5.25 2], [2 4], [7.5 1 0], [2.5 6 6.5], [7.5 7."
+"25 9.75], [1 2.25 4.75], [2.75 2 0 0 0.25], [7.5 8 6.5 5.25 5], [1.5 0.5], [6"
+".75 6.25])"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "vehicledata(1)|vehicledata(2)|vehicledata(3)|ve"
+"hicledata(4)|vehicledata(5)|vehicledata(6)/vehicledata(4)*vehicledata(1)"
+      MaskVariableAliases     ",,,,,"
+      Port {
+	PortNumber		1
+	Name			"vehicle\nspeed"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      Port {
+	PortNumber		2
+	Name			"transmission speed"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      System {
+	Name			"Vehicle"
+	Location		[33, 249, 868, 679]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "brake torque"
+	  Position		  [40, 250, 60, 270]
+	  FontSize		  12
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "transmission\noutput torque"
+	  Position		  [40, 70, 60, 90]
+	  FontSize		  12
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Signum
+	  Name			  "Sign"
+	  Position		  [595, 165, 625, 195]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [185, 68, 210, 112]
+	  ShowName		  off
+	  FontSize		  12
+	  IconShape		  "rectangular"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [645, 191, 670, 284]
+	  ShowName		  off
+	  FontSize		  12
+	  IconShape		  "rectangular"
+	  Inputs		  "++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "final\ndrive\nratio"
+	  Position		  [110, 63, 145, 97]
+	  FontSize		  12
+	  Gain			  "Rfd"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "final drive\nratio"
+	  Position		  [580, 74, 615, 106]
+	  FontSize		  12
+	  Gain			  "Rfd"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "linear speed"
+	  Position		  [370, 188, 430, 242]
+	  NamePlacement		  "alternate"
+	  FontSize		  12
+	  Gain			  "2*pi*Rw"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "mph"
+	  Position		  [450, 188, 510, 242]
+	  NamePlacement		  "alternate"
+	  FontSize		  12
+	  Gain			  "60/5280"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "road load"
+	  Position		  [550, 201, 615, 229]
+	  FontSize		  12
+	  Expr			  "rload0 + rload2*u^2"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "signed\nload"
+	  Ports			  [2, 1]
+	  Position		  [700, 149, 725, 271]
+	  FontSize		  12
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "vehicle\ninertia"
+	  Position		  [235, 74, 270, 106]
+	  FontSize		  12
+	  Gain			  "1/Iv"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "wheel\nspeed"
+	  Ports			  [1, 1]
+	  Position		  [305, 80, 325, 100]
+	  FontSize		  12
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "N20/Rfd"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "vehicle\nspeed"
+	  Position		  [765, 135, 785, 155]
+	  FontSize		  12
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "transmission\noutput speed"
+	  Position		  [765, 80, 785, 100]
+	  FontSize		  12
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "final drive\nratio"
+	  SrcPort		  1
+	  DstBlock		  "transmission\noutput speed"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "brake torque"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "signed\nload"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "road load"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sign"
+	  SrcPort		  1
+	  DstBlock		  "signed\nload"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "signed\nload"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 115; -590, 0; 0, -225]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "transmission\noutput torque"
+	  SrcPort		  1
+	  DstBlock		  "final\ndrive\nratio"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "vehicle\ninertia"
+	  SrcPort		  1
+	  DstBlock		  "wheel\nspeed"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "vehicle\ninertia"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "mph"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -35]
+	  Branch {
+	    Points		    [0, -35]
+	    DstBlock		    "vehicle\nspeed"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sign"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 35]
+	    DstBlock		    "road load"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "linear speed"
+	  SrcPort		  1
+	  DstBlock		  "mph"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "wheel\nspeed"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    Points		    [0, 125]
+	    DstBlock		    "linear speed"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "final drive\nratio"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "final\ndrive\nratio"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Annotation {
+	  Position		  [367, 352]
+	  VerticalAlignment	  "top"
+	  Text			  "Vehicle"
+	  FontSize		  16
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "brake\nschedule"
+      Position		      [433, 15, 507, 55]
+      Orientation	      "down"
+      BackgroundColor	      "red"
+      VariableName	      "[0 0;100 0;101 400;200 400]"
+      SampleTime	      "0"
+      Interpolate	      on
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "engine RPM"
+      Ports		      [1]
+      Position		      [245, 76, 280, 114]
+      BackgroundColor	      "yellow"
+      NamePlacement	      "alternate"
+      Floating		      off
+      Location		      [306, 315, 574, 639]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "0"
+      YMax		      "6000"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "shift_logic"
+      Ports		      [3, 2]
+      Position		      [125, 113, 240, 197]
+      BackgroundColor	      "green"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Stateflow"
+      MaskDescription	      "Stateflow diagram"
+      MaskDisplay	      "plot(sf('Private','sfblk','xIcon'),sf('Private'"
+",'sfblk','yIcon'));text(0.5,0,sf('Private', 'sfblk', 'tIcon'),'HorizontalAl',"
+"'Center','VerticalAl','Bottom');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      off
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"shift_logic"
+	Location		[70, 200, 570, 460]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "speed"
+	  Position		  [20, 101, 40, 119]
+	  Port			  "1"
+	  LatchInput		  off
+	  PortDimensions	  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "up_th"
+	  Position		  [20, 136, 40, 154]
+	  Port			  "2"
+	  LatchInput		  off
+	  PortDimensions	  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "down_th"
+	  Position		  [20, 171, 40, 189]
+	  Port			  "3"
+	  LatchInput		  off
+	  PortDimensions	  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  Ports			  [1, 1]
+	  Position		  [270, 180, 320, 220]
+	  Outputs		  "1"
+	  BusSelectionMode	  off
+	  Port {
+	    PortNumber		    1
+	    Name		    "CALC_TH"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  " SFunction "
+	  Tag			  "Stateflow S-Function sfcar_vr 1"
+	  Ports			  [3, 2]
+	  Position		  [180, 100, 230, 180]
+	  FunctionName		  "sf_sfun"
+	  PortCounts		  "[3 2]"
+	  SFunctionModules	  "''"
+	  Port {
+	    PortNumber		    2
+	    Name		    "gear"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "gear"
+	  Position		  [460, 101, 480, 119]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "CALC_TH"
+	  Position		  [460, 136, 480, 154]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "speed"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "up_th"
+	  SrcPort		  1
+	  Points		  [120, 0]
+	  DstBlock		  " SFunction "
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "down_th"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "gear"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "gear"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "CALC_TH"
+	  Labels		  [0, 0]
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  "CALC_TH"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "throttle\nschedule"
+      Position		      [5, 55, 75, 95]
+      BackgroundColor	      "red"
+      VariableName	      "[0 60; 14.9 40;15 100;100 0;200 0]"
+      SampleTime	      "0"
+      Interpolate	      on
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "transmission"
+      Ports		      [3, 2]
+      Position		      [325, 41, 390, 149]
+      BackgroundColor	      "lightBlue"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      Port {
+	PortNumber		1
+	Name			"impeller torque"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      Port {
+	PortNumber		2
+	Name			"output torque"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      System {
+	Name			"transmission"
+	Location		[518, 287, 984, 538]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Ne"
+	  Position		  [25, 48, 55, 62]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "gear"
+	  Position		  [25, 118, 55, 132]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Nout"
+	  Position		  [25, 153, 55, 167]
+	  Port			  "3"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Torque\nConverter"
+	  Ports			  [2, 2]
+	  Position		  [140, 40, 195, 95]
+	  FontName		  "Arial"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "torque converter"
+	  MaskDescription	  "torque converter "
+	  MaskHelp		  "Torque converter input and output torques a"
+"re computed as a function of the input and output speeds"
+	  MaskPromptString	  " speed ratio | K factor | torque ratio"
+	  MaskStyleString	  "edit,edit,edit"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskVariables		  "speedratio=@1;Kfactor=@2;Torkratio=@3;"
+	  MaskDisplay		  "plot([cos([90:10:450]*pi/180),.63*cos([90:1"
+"0:450]*pi/180),.63*cos([90:10:240]*pi/180),cos([240:10:300]*pi/180),.63*cos(["
+"300]*pi/180)],[sin([90:10:450]*pi/180),.63*sin([90:10:450]*pi/180)+.1,.63*sin"
+"([90:10:240]*pi/180)+.1,sin([240:10:300]*pi/180),.63*sin([300]*pi/180)+.1])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "converter_data(:,1)|converter_data(:,2)|con"
+"verter_data(:,3)"
+	  MaskVariableAliases	  ",,"
+	  Port {
+	    PortNumber		    2
+	    Name		    "turbine torque"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	  System {
+	    Name		    "Torque\nConverter"
+	    Location		    [182, 80, 766, 337]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Ne"
+	      Position		      [30, 98, 55, 112]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Nin"
+	      Position		      [30, 68, 55, 82]
+	      NamePlacement	      "alternate"
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "K\nfactor"
+	      Position		      [190, 65, 240, 115]
+	      InputValues	      "speedratio"
+	      OutputValues	      "Kfactor"
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "Torque\nratio"
+	      Position		      [340, 119, 395, 171]
+	      InputValues	      "speedratio"
+	      OutputValues	      "Torkratio"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "impeller"
+	      Position		      [335, 56, 395, 94]
+	      Expr		      "u^2"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "quotient"
+	      Ports		      [2, 1]
+	      Position		      [270, 39, 315, 106]
+	      Inputs		      "*/"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "speed\nratio"
+	      Ports		      [2, 1]
+	      Position		      [100, 61, 150, 119]
+	      Inputs		      "*/"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "turbine"
+	      Ports		      [2, 1]
+	      Position		      [445, 64, 490, 106]
+	      Inputs		      "2"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Ti"
+	      Position		      [515, 29, 540, 41]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tt"
+	      Position		      [515, 79, 540, 91]
+	      Port		      "2"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "Torque\nratio"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, -50]
+	      DstBlock		      "turbine"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "quotient"
+	      SrcPort		      1
+	      DstBlock		      "impeller"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "K\nfactor"
+	      SrcPort		      1
+	      DstBlock		      "quotient"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "speed\nratio"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		Points			[0, 55]
+		DstBlock		"Torque\nratio"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"K\nfactor"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "impeller"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      Branch {
+		DstBlock		"turbine"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -40]
+		DstBlock		"Ti"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "turbine"
+	      SrcPort		      1
+	      DstBlock		      "Tt"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Ne"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		DstBlock		"speed\nratio"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, -50]
+		DstBlock		"quotient"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Nin"
+	      SrcPort		      1
+	      DstBlock		      "speed\nratio"
+	      DstPort		      1
+	    }
+	    Annotation {
+	      Position		      [262, 197]
+	      VerticalAlignment	      "top"
+	      Text		      "TORQUE CONVERTER"
+	      FontSize		      12
+	      FontWeight	      "bold"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "transmission\nratio"
+	  Ports			  [3, 2]
+	  Position		  [300, 71, 360, 129]
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "transmission\nratio"
+	    Location		    [720, 342, 1111, 576]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Tin"
+	      Position		      [25, 28, 55, 42]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "gear"
+	      Position		      [25, 73, 55, 87]
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Nout"
+	      Position		      [335, 163, 365, 177]
+	      Orientation	      "left"
+	      Port		      "3"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "Look-Up\nTable"
+	      Position		      [110, 65, 140, 95]
+	      InputValues	      "[1 2 3 4]"
+	      OutputValues	      "[2.393 1.450 1.000 0.677]"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      Ports		      [2, 1]
+	      Position		      [235, 27, 265, 58]
+	      Inputs		      "2"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product1"
+	      Ports		      [2, 1]
+	      Position		      [245, 147, 275, 178]
+	      Orientation	      "left"
+	      Inputs		      "2"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Tout"
+	      Position		      [335, 38, 365, 52]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Nin"
+	      Position		      [25, 158, 55, 172]
+	      Orientation	      "left"
+	      Port		      "2"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "Look-Up\nTable"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      Branch {
+		Points			[115, 0]
+		DstBlock		"Product1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -30]
+		DstBlock		"Product"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Nout"
+	      SrcPort		      1
+	      DstBlock		      "Product1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product1"
+	      SrcPort		      1
+	      DstBlock		      "Nin"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "Tout"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Tin"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "gear"
+	      SrcPort		      1
+	      DstBlock		      "Look-Up\nTable"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Ti"
+	  Position		  [410, 48, 440, 62]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Tout"
+	  Position		  [410, 78, 440, 92]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "transmission\nratio"
+	  SrcPort		  1
+	  DstBlock		  "Tout"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Torque\nConverter"
+	  SrcPort		  1
+	  DstBlock		  "Ti"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Nout"
+	  SrcPort		  1
+	  Points		  [200, 0; 0, -40]
+	  DstBlock		  "transmission\nratio"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "gear"
+	  SrcPort		  1
+	  Points		  [180, 0; 0, -25]
+	  DstBlock		  "transmission\nratio"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Ne"
+	  SrcPort		  1
+	  DstBlock		  "Torque\nConverter"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "transmission\nratio"
+	  SrcPort		  2
+	  Points		  [15, 0; 0, 80; -275, 0; 0, -115]
+	  DstBlock		  "Torque\nConverter"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "turbine torque"
+	  Labels		  [1, 0]
+	  SrcBlock		  "Torque\nConverter"
+	  SrcPort		  2
+	  DstBlock		  "transmission\nratio"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "vehicle mph \n(yellow)\n& throttle %"
+      Ports		      [1]
+      Position		      [670, 305, 710, 345]
+      BackgroundColor	      "yellow"
+      NamePlacement	      "alternate"
+      Floating		      off
+      Location		      [205, 424, 512, 677]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "0"
+      YMax		      "140"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Line {
+      SrcBlock		      "brake\nschedule"
+      SrcPort		      1
+      Points		      [0, 30]
+      DstBlock		      "Vehicle"
+      DstPort		      1
+    }
+    Line {
+      Name		      "impeller torque"
+      Labels		      [3, 0]
+      SrcBlock		      "transmission"
+      SrcPort		      1
+      Points		      [25, 0; 0, -55; -290, 0]
+      DstBlock		      "Engine"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "throttle\nschedule"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Engine"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 265; 205, 0]
+	Branch {
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, -70]
+	  DstBlock		  "Threshold Calculation"
+	  DstPort		  2
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Engine"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	DstBlock		"transmission"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 35]
+	DstBlock		"engine RPM"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "output torque"
+      Labels		      [1, 1]
+      SrcBlock		      "transmission"
+      SrcPort		      2
+      DstBlock		      "Vehicle"
+      DstPort		      2
+    }
+    Line {
+      Name		      "transmission speed"
+      Labels		      [3, 0]
+      SrcBlock		      "Vehicle"
+      SrcPort		      2
+      Points		      [15, 0; 0, 60; -315, 0; 0, -55]
+      DstBlock		      "transmission"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Threshold Calculation"
+      SrcPort		      1
+      Points		      [-35, 0; 0, -65]
+      DstBlock		      "shift_logic"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Threshold Calculation"
+      SrcPort		      2
+      Points		      [-45, 0; 0, -115]
+      DstBlock		      "shift_logic"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "shift_logic"
+      SrcPort		      1
+      Points		      [45, 0]
+      Branch {
+	Points			[0, -40]
+	DstBlock		"transmission"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 110]
+	DstBlock		"Threshold Calculation"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "shift_logic"
+      SrcPort		      2
+      Points		      [25, 0; 0, 40; -65, 0]
+      DstBlock		      "Threshold Calculation"
+      DstPort		      trigger
+    }
+    Line {
+      Name		      "vehicle\nspeed"
+      Labels		      [2, 0]
+      SrcBlock		      "Vehicle"
+      SrcPort		      1
+      Points		      [25, 0; 0, 215]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			1
+      }
+      Branch {
+	Points			[-565, 0]
+	Branch {
+	  Points		  [0, -175]
+	  DstBlock		  "shift_logic"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 95]
+	  DstBlock		  "Conversion to m/s"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "vehicle mph \n(yellow)\n& throttle %"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Conversion to m/s"
+      SrcPort		      1
+      DstBlock		      "Integrator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Form vehicle \ntranslation field"
+      SrcPort		      1
+      DstBlock		      "VR Sink"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Vehicle position Z"
+      Labels		      [1, 1]
+      SrcBlock		      "Integrator"
+      SrcPort		      1
+      DstBlock		      "Form vehicle \ntranslation field"
+      DstPort		      1
+    }
+  }
+}
+
+# Finite State Machines
+# -- File save dated 19-Oct-2001 14:04:27
+#
+#    Stateflow Version 4.1 (R12.1) dated May 21 2001, 01:15:03
+#
+#
+
+Stateflow {
+
+	machine {
+		id                   		1
+		name                 		"sfcar_vr"
+		isLibrary            		0
+		firstTarget          		35
+		debug {
+			runTimeCheck         		[0 0 0 0]
+		}
+		sfVersion            		41012101
+	}
+
+	chart {
+		id                       		2
+		name                     		"shift_logic"
+		windowPosition           		[117.75 182.25 502.5 321]
+		viewLimits               		[0 599.56 0 372.276]
+		zoomFactor               		1.306
+		screen                   		[1 1 1024 768 1.333333333333333]
+		treeNode                 		[0 4 0 0]
+		viewObj                  		2
+		machine                  		1
+		subviewS {
+			y1        		1.912
+			zoomFactor		1.383
+		}
+		decomposition            		SET_CHART
+		firstEvent               		28
+		firstData                		29
+		updateMethod             		DISCRETE
+		sampleTime               		"0.04"
+		chartFileNumber          		1
+	}
+
+	state {
+		id             		3
+		labelString    		"downshifting"
+		position       		[50.63 246.044 86.103 34.075]
+		fontSize       		10
+		arrowSize      		10
+		chart          		2
+		treeNode       		[9 0 10 0]
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		4
+		labelString    		"gear_state"
+		position       		[12.661 17.439 567.664 76.723]
+		fontSize       		10
+		arrowSize      		12.207
+		chart          		2
+		treeNode       		[2 5 0 9]
+		firstTransition		15
+		subviewer      		2
+		type           		AND_STATE
+		decomposition  		CLUSTER_STATE
+		firstEvent     		26
+	}
+
+	state {
+		id             		5
+		labelString    		"fourth\n"
+						"entry: gear = 4;"
+		position       		[474.636 34.168 84.643 40.59]
+		fontSize       		10
+		arrowSize      		9.224
+		chart          		2
+		treeNode       		[4 0 0 7]
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		6
+		labelString    		"second\n"
+						"entry: gear = 2;"
+		position       		[188.214 36.953 85.819 37.936]
+		fontSize       		10
+		arrowSize      		9.224
+		chart          		2
+		treeNode       		[4 0 7 8]
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		7
+		labelString    		"third\n"
+						"entry: gear = 3;"
+		position       		[334.106 36.116 86.87 37.488]
+		fontSize       		10
+		arrowSize      		9.224
+		chart          		2
+		treeNode       		[4 0 5 6]
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		8
+		labelString    		"first\n"
+						"entry: gear = 1;"
+		position       		[50.703 39.527 85.34 36.914]
+		fontSize       		10
+		arrowSize      		9.224
+		chart          		2
+		treeNode       		[4 0 6 0]
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		9
+		labelString    		"selection_state\n"
+						"during: CALC_TH;"
+		position       		[10.743 105.442 568.418 217.437]
+		fontSize       		10
+		arrowSize      		12.207
+		chart          		2
+		treeNode       		[2 11 4 0]
+		firstTransition		19
+		subgrouped     		1
+		subviewer      		2
+		subviewS {
+			x1        		-35.275
+			y1        		-42.119
+			zoomFactor		2.808
+			pos       		[0 0 1340.435 601.385]
+			fontSize  		18.481
+		}
+		type           		AND_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		10
+		labelString    		"upshifting"
+		position       		[458.505 241.801 74.109 36.255]
+		fontSize       		10
+		arrowSize      		10
+		chart          		2
+		treeNode       		[9 0 11 3]
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	state {
+		id             		11
+		labelString    		"steady_state"
+		position       		[253.299 145.577 94.026 38.764]
+		fontSize       		10
+		arrowSize      		10
+		chart          		2
+		treeNode       		[9 0 0 10]
+		subviewer      		2
+		type           		OR_STATE
+		decomposition  		CLUSTER_STATE
+	}
+
+	transition {
+		id             		12
+		labelString    		"UP"
+		labelPosition  		[443.237 30.416 14.695 15.675]
+		fontSize       		10
+		arrowSize      		9.224
+		src {
+			id          		7
+			intersection		[2 1 0 0.381 420.9759 50.3989 0 0]
+		}
+		dst {
+			id          		5
+			intersection		[4 -1 0 0.5861 474.6359 50.9671 0 0]
+		}
+		midPoint       		[444.06 50.7015]
+		chart          		2
+		linkNode       		[4 14 17]
+		dataLimits     		[420.976 474.636 48.2 53.734]
+		subviewer      		2
+	}
+
+	transition {
+		id             		13
+		labelString    		"UP"
+		labelPosition  		[289.621 27.506 14.695 15.675]
+		fontSize       		10
+		arrowSize      		9.224
+		src {
+			id          		6
+			intersection		[2 1 0 0.2923 274.033 48.0436 0 0]
+		}
+		dst {
+			id          		7
+			intersection		[4 -1 0 0.689 334.1061 47.7732 0 0]
+		}
+		midPoint       		[300.4631 47.8996]
+		chart          		2
+		linkNode       		[4 15 14]
+		dataLimits     		[274.033 334.106 45.006 50.54]
+		subviewer      		2
+	}
+
+	transition {
+		id             		14
+		labelString    		"UP"
+		labelPosition  		[154.021 27.761 14.695 15.675]
+		fontSize       		10
+		arrowSize      		9.224
+		src {
+			id          		8
+			intersection		[2 1 0 0.2824 136.0434 49.9509 0 0]
+		}
+		dst {
+			id          		6
+			intersection		[4 -1 0 0.6654 188.2139 49.6482 0 0]
+		}
+		midPoint       		[158.3504 49.7897]
+		chart          		2
+		linkNode       		[4 13 12]
+		dataLimits     		[136.043 188.214 46.881 52.415]
+		subviewer      		2
+	}
+
+	transition {
+		id             		15
+		labelPosition  		[33.174 26.142 7.837 15.675]
+		fontSize       		10
+		arrowSize      		9.224
+		src {
+			intersection		[0 0 0 0 29.3367 47.5456 0 0]
+		}
+		dst {
+			id          		8
+			intersection		[4 -1 0 0.7868 50.703 47.3982 0 0]
+		}
+		midPoint       		[35.5719 47.4495]
+		chart          		2
+		linkNode       		[4 0 13]
+		dataLimits     		[29.337 50.703 44.631 50.165]
+		subviewer      		2
+	}
+
+	transition {
+		id             		16
+		labelString    		"DOWN"
+		labelPosition  		[428.709 70.669 33.309 15.675]
+		fontSize       		10
+		arrowSize      		9.224
+		src {
+			id          		5
+			intersection		[4 -1 0 0.3598 474.6359 60.1552 0 0]
+		}
+		dst {
+			id          		7
+			intersection		[2 1 0 0.6505 420.9759 60.5017 0 0]
+		}
+		midPoint       		[452.0545 60.2765]
+		chart          		2
+		linkNode       		[4 17 18]
+		dataLimits     		[420.976 474.636 57.734 63.269]
+		subviewer      		2
+	}
+
+	transition {
+		id             		17
+		labelString    		"DOWN"
+		labelPosition  		[286.337 72.677 33.309 15.675]
+		fontSize       		10
+		arrowSize      		9.224
+		src {
+			id          		7
+			intersection		[4 -1 0 0.3495 334.1061 60.5017 0 0]
+		}
+		dst {
+			id          		6
+			intersection		[2 1 0 0.6153 274.033 60.294 0 0]
+		}
+		midPoint       		[307.5336 60.3733]
+		chart          		2
+		linkNode       		[4 12 16]
+		dataLimits     		[274.033 334.106 57.527 63.061]
+		subviewer      		2
+	}
+
+	transition {
+		id             		18
+		labelString    		"DOWN"
+		labelPosition  		[146.362 69.093 33.309 15.675]
+		fontSize       		10
+		arrowSize      		9.224
+		src {
+			id          		6
+			intersection		[4 -1 0 0.3319 188.2139 62.2998 0 0]
+		}
+		dst {
+			id          		8
+			intersection		[2 1 0 0.6092 136.0434 62.0159 0 0]
+		}
+		midPoint       		[165.9069 62.1486]
+		chart          		2
+		linkNode       		[4 16 0]
+		dataLimits     		[136.043 188.214 59.249 64.783]
+		subviewer      		2
+	}
+
+	transition {
+		id             		19
+		labelPosition  		[297.249 127.526 7.837 15.675]
+		fontSize       		10
+		arrowSize      		10
+		src {
+			intersection		[0 0 0 0.1467 297.353 123.8093 0 0]
+		}
+		dst {
+			id          		11
+			intersection		[1 0 -1 0.4648 297.0026 145.5768 0 0]
+		}
+		midPoint       		[297.1246 129.84]
+		chart          		2
+		linkNode       		[9 0 20]
+		dataLimits     		[294.003 300.003 123.809 145.577]
+		subviewer      		2
+	}
+
+	transition {
+		id             		20
+		labelString    		"[speed > up_th]"
+		labelPosition  		[358.392 146.016 75.435 15.675]
+		fontSize       		10
+		arrowSize      		10
+		src {
+			id          		11
+			intersection		[2 1 0 0.4364 347.3246 162.4948 0 0]
+		}
+		dst {
+			id          		10
+			intersection		[1 0 -1 0.4254 490.0296 241.8005 0 0]
+		}
+		midPoint       		[443.073 178.668]
+		chart          		2
+		linkNode       		[9 19 21]
+		dataLimits     		[347.325 493.03 162.441 241.801]
+		subviewer      		2
+	}
+
+	transition {
+		id             		21
+		labelString    		"[speed < down_th]"
+		labelPosition  		[116.093 148.251 91.11 15.675]
+		fontSize       		10
+		arrowSize      		10
+		src {
+			id          		11
+			intersection		[4 -1 0 0.5159 253.2986 164.3405 0 0]
+		}
+		dst {
+			id          		3
+			intersection		[1 0 -1 0.3373 79.6741 246.044 0 0]
+		}
+		midPoint       		[137.9285 177.5474]
+		chart          		2
+		linkNode       		[9 20 23]
+		dataLimits     		[76.674 253.299 163.642 246.044]
+		subviewer      		2
+	}
+
+	transition {
+		id             		22
+		labelString    		"[speed < up_th]"
+		labelPosition  		[359.467 214.892 75.435 15.675]
+		fontSize       		10
+		arrowSize      		10
+		src {
+			id          		10
+			intersection		[4 -1 0 0.6747 458.5053 253.5951 0 0]
+		}
+		dst {
+			id          		11
+			intersection		[3 0 1 0.2839 320.6299 184.3405 0 0]
+		}
+		midPoint       		[366.357 239.46]
+		chart          		2
+		linkNode       		[9 25 0]
+		dataLimits     		[317.63 458.505 184.34 253.603]
+		subviewer      		2
+	}
+
+	transition {
+		id             		23
+		labelString    		"[speed > down_th]"
+		labelPosition  		[107.686 227.463 91.11 15.675]
+		fontSize       		10
+		arrowSize      		10
+		src {
+			id          		3
+			intersection		[2 1 0 0.2511 136.7337 254.6004 0 0]
+		}
+		dst {
+			id          		11
+			intersection		[3 0 1 0.8059 271.5466 184.3405 0 0]
+		}
+		midPoint       		[222.9232 243.042]
+		chart          		2
+		linkNode       		[9 21 24]
+		dataLimits     		[136.734 274.547 184.34 254.713]
+		subviewer      		2
+	}
+
+	transition {
+		id             		24
+		labelString    		"after(TWAIT,tick)\n"
+						"[speed <= down_th]\n"
+						"{gear_state.DOWN}"
+		labelPosition  		[162.18 272.336 96.988 43.106]
+		fontSize       		10
+		arrowSize      		10
+		src {
+			id          		3
+			intersection		[2 1 0 0.6609 136.7337 268.5648 0 0]
+		}
+		dst {
+			id          		11
+			intersection		[3 0 1 0.6756 283.8028 184.3405 0 0]
+		}
+		midPoint       		[232.0486 251.6784]
+		chart          		2
+		linkNode       		[9 23 25]
+		dataLimits     		[136.734 286.803 184.34 268.565]
+		subviewer      		2
+	}
+
+	transition {
+		id             		25
+		labelString    		"after(TWAIT,tick)\n"
+						"[speed >= up_th]\n"
+						"{gear_state.UP}"
+		labelPosition  		[327.58 270.207 82.293 43.106]
+		fontSize       		10
+		arrowSize      		10
+		src {
+			id          		10
+			intersection		[4 -1 0 0.3414 458.5053 265.6778 0 0]
+		}
+		dst {
+			id          		11
+			intersection		[3 0 1 0.4395 306.0035 184.3405 0 0]
+		}
+		midPoint       		[356.0373 247.4078]
+		chart          		2
+		linkNode       		[9 24 22]
+		dataLimits     		[303.004 458.505 184.34 265.678]
+		subviewer      		2
+	}
+
+	event {
+		id         		26
+		name       		"DOWN"
+		linkNode   		[4 0 27]
+		scope      		LOCAL_EVENT
+		trigger    		EITHER_EDGE_EVENT
+		machine    		1
+	}
+
+	event {
+		id         		27
+		name       		"UP"
+		linkNode   		[4 26 0]
+		scope      		LOCAL_EVENT
+		trigger    		EITHER_EDGE_EVENT
+		machine    		1
+	}
+
+	event {
+		id         		28
+		name       		"CALC_TH"
+		linkNode   		[2 0 0]
+		scope      		OUTPUT_EVENT
+		trigger    		FUNCTION_CALL_EVENT
+		machine    		1
+	}
+
+	data {
+		id               		29
+		name             		"speed"
+		linkNode         		[2 0 30]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		units            		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		30
+		name             		"gear"
+		linkNode         		[2 29 31]
+		scope            		OUTPUT_DATA
+		machine          		1
+		dataType         		"uint8"
+		units            		"int"
+		props {
+			range {
+				minimum		"1"
+				maximum		"4"
+			}
+		}
+	}
+
+	data {
+		id               		31
+		name             		"TWAIT"
+		linkNode         		[2 30 32]
+		scope            		CONSTANT_DATA
+		initFromWorkspace		1
+		machine          		1
+		dataType         		"uint8"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		32
+		name             		"up_th"
+		linkNode         		[2 31 33]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	data {
+		id               		33
+		name             		"down_th"
+		linkNode         		[2 32 0]
+		scope            		INPUT_DATA
+		machine          		1
+		dataType         		"double"
+		props {
+			range {
+				minimum		""
+				maximum		""
+			}
+		}
+	}
+
+	instance {
+		id     		34
+		name   		"shift_logic"
+		machine		1
+		chart  		2
+	}
+
+	target {
+		id               		35
+		name             		"sfun"
+		description      		"Default S-Function target."
+		codeFlags        		" debug=1 telemetry=0 preservenames=0 preservenameswithparent"
+						"=0 exportcharts=0 project=0 multiinstanced=0 statebitsets=1 "
+						"databitsets=1 comments=0 echo=0 initializer=1 ioformat=1"
+		machine          		1
+		linkNode         		[1 0 36]
+		checksumOld      		[669254712 3226503146 2893573782 4148113788]
+	}
+
+	target {
+		id               		36
+		name             		"rtw"
+		description      		"Default S-Function target."
+		codeFlags        		" debug=0 telemetry=0 preservenames=0 preservenameswithparent"
+						"=0 exportcharts=0 project=0 multiinstanced=0 statebitsets=1 "
+						"databitsets=1 comments=0 echo=0 initializer=1 ioformat=1"
+		machine          		1
+		linkNode         		[1 35 0]
+	}
+}
